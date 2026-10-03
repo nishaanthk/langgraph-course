@@ -1,7 +1,22 @@
 [project]
 name = "react-agent-function-calling"
 version = "0.1.0"
-description = "Add your description here"
+description = "ReAct agent with function calling using LangGraph and LangChain"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10,<3.15"
+dependencies = [
+"black>=25.1.0",
+"isort>=6.0.1",
+"langchain>=0.3.25",
+"langchain-openai>=0.3.18",
+"langchain-tavily>=0.2.0",
+"langgraph>=0.4.7",
+"python-dotenv>=1.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

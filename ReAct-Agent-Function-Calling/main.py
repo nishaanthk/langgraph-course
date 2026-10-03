@@ -1,6 +1,5 @@
-def main():
-    print("Hello from react-agent-function-calling!")
-
+from dotenv import load_dotenv
+load_dotenv()
 
 if __name__ == "__main__":
-    main()
+    print("Hello ReAct LangGraph with Function Calling")
